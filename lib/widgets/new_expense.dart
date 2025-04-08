@@ -17,7 +17,7 @@ class _NewExpenseState extends State<NewExpense> {
     _titleController.dispose();
     super.dispose();
   }
-
+  
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -39,6 +39,9 @@ class _NewExpenseState extends State<NewExpense> {
             ],
           ),
           Row(
+
+          ),
+          Row(
             children: [
               ElevatedButton(
                 onPressed: () {
@@ -47,7 +50,7 @@ class _NewExpenseState extends State<NewExpense> {
                 child: Text('Save Expense'),
               )
             ],
-          )
+          ),
         ],
       ),
     );
